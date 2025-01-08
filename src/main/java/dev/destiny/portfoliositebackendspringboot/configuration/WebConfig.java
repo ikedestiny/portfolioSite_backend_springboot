@@ -9,7 +9,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         // Allow CORS for all endpoints
         registry.addMapping("/**")
-                .allowedOrigins("/*")  // or "*" to allow all origins
+                .allowedOrigins("http://localhost:3000","https://ikedestiny.onrender.com")  // or "*" to allow all origins
                 .allowedMethods("GET", "POST", "PUT", "DELETE")  // Specify allowed HTTP methods
                 .allowedHeaders("*")  // Allow all headers
                 .allowCredentials(true)  // Allow credentials (cookies, etc.)
